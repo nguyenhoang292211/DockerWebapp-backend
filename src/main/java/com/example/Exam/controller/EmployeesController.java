@@ -3,6 +3,7 @@ package com.example.Exam.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -33,10 +34,16 @@ public class EmployeesController {
 		return employeeService.findAll();
 	}
 	
-	@GetMapping("/api/employee/find/{id}")
+	@GetMapping("/employee/find/{id}")
 	public EmployeeDTO findById(@PathVariable int id)
 	{
 		return employeeService.findById(id);
+	}
+	
+	@DeleteMapping("/employee/{id}")
+	public void deleteEmployee(@PathVariable int id)
+	{
+		employeeService.deleteById(id);
 	}
 
 }

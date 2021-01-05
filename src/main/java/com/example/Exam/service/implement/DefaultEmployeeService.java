@@ -49,6 +49,12 @@ public class DefaultEmployeeService implements EmployeeService {
 		EmployeeEntity employeeEntity= employeeRepository.findbyid(id);
 		return employeeMapper.toDTO(employeeEntity);
 	}
+
+	@Override
+	public void deleteById(int id) {
+		 employeeRepository.deleteById(id);
+	}
+	
 	
 
 	

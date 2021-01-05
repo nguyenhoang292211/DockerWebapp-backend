@@ -12,5 +12,6 @@ public interface EmployeeService {
 	
 	EmployeeDTO findById(int id);
 	
+	void deleteById(int id);
 	
 }

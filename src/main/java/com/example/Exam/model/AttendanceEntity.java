@@ -2,12 +2,31 @@ package com.example.Exam.model;
 
 import java.util.Date;
 
-public class Attendance {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table (name="Attendance")
+public class AttendanceEntity {
+
+	@Id
+	@Column(name="id_employee")
 	private int id_emp;
+	
+	@Id
+	@Column(name="month")
 	private int month;
+	
+	@Id
+	@Column(name="year")
 	private int year;
+	
+	@Column(name="dayoff")
 	private Date dayoff;
+	
+	@Column(name="dayon")
 	private Date dayon;
 	
 	public int getId_emp() {
@@ -50,7 +69,7 @@ public class Attendance {
 		this.dayon = dayon;
 	}
 
-	public Attendance() {
+	public AttendanceEntity() {
 		// TODO Auto-generated constructor stub
 	}
 

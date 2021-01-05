@@ -2,7 +2,6 @@ package com.example.Exam.dto;
 
 import java.util.Date;
 
-import javax.persistence.Column;
 
 public class EmployeeDTO {
 
