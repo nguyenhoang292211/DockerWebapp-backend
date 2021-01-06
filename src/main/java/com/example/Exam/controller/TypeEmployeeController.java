@@ -21,7 +21,7 @@ public class TypeEmployeeController {
 	@Autowired
 	private TypeEmployeeService typeEmployeeService;
 	
-	@PostMapping("/typeEmployee")	
+	@PostMapping("/position")	
 	public TypeEmployeeDTO save(@RequestBody TypeEmployeeDTO position)
 	{
 		return typeEmployeeService.save(position);
