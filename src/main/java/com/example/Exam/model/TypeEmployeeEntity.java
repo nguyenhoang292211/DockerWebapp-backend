@@ -35,6 +35,8 @@ public class TypeEmployeeEntity {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	
 
 	public TypeEmployeeEntity() {
 		// TODO Auto-generated constructor stub

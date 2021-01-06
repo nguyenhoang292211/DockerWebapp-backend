@@ -1,9 +1,6 @@
 package com.example.Exam.service;
 
-public class DepartmentService {
+public interface DepartmentService {
 
-	public DepartmentService() {
-		// TODO Auto-generated constructor stub
-	}
 
 }

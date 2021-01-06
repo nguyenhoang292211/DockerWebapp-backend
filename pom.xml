@@ -16,7 +16,10 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		 <start-class>com.example.Exam.ExamApplication</start-class>
 	</properties>
+	
+
 
 	<dependencies>
 		<dependency>

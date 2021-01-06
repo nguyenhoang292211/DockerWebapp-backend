@@ -1,9 +1,17 @@
 package com.example.Exam.service;
 
-public class TypeEmployeeService {
+import java.util.List;
 
-	public TypeEmployeeService() {
-		// TODO Auto-generated constructor stub
-	}
+import com.example.Exam.dto.TypeEmployeeDTO;
 
+public interface TypeEmployeeService {
+
+
+TypeEmployeeDTO save (TypeEmployeeDTO typeEmployee);
+	
+	List<TypeEmployeeDTO> findAll();
+	
+//	TypeEmployeeDTO findPositionById(int id);
+//	
+//	void deletePositionById(int id);
 }
